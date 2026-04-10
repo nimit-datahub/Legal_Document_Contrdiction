@@ -16,7 +16,7 @@ def load_model():
     vectorizer = joblib.load(VECTORIZER_PATH)
 
     return model, vectorizer
-
+model, vectorizer = load_model()
 st.header("1. Download Sample Templates")
 
 col1, col2, col3 = st.columns(3)
@@ -186,7 +186,7 @@ st.write(
     "Upload a CSV, Excel, or JSON file with 'Premise' and 'Hypothesis' columns to get predictions in bulk."
 )
 uploaded_file = st.file_uploader("Choose a file", type=["csv", "xlsx", "json"])
-# model, vectorizer = load_model()
+
 label_map = {0: "Contradiction ❌", 1: "Entailment ✅", 2: "Neutral ⚖️"}
 
 if uploaded_file:
