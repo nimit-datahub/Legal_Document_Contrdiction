@@ -76,3 +76,6 @@ if st.button("Predict"):
 
     else:
         st.write("Please enter both fields")
+        
+if st.button("📂 Go to Bulk Prediction"):
+    st.switch_page("pages/2_📊_Bulk_Scanner.py")
