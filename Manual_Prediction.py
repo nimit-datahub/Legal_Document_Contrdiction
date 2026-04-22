@@ -57,7 +57,7 @@ with st.expander("ℹ️ How this works"):
 st.markdown("---")
 samples = [
     {
-        "premise": "A boy is playing cricket in the मैदान",
+        "premise": "A boy is playing cricket in the field",
         "hypothesis": "A boy is playing a sport"
     },
     {
@@ -65,13 +65,29 @@ samples = [
         "hypothesis": "A woman is preparing a meal"
     },
     {
-        "premise": "The stock market crashed yesterday",
-        "hypothesis": "The economy is doing very well"
+        "premise": "The man is sleeping on the bed",
+        "hypothesis": "The man is running outside"
+    },
+    {
+        "premise": "It is raining heavily in the city",
+        "hypothesis": "The weather is completely dry"
+    },
+    {
+        "premise": "A girl is reading a book",
+        "hypothesis": "The girl is in a library"
+    },
+    {
+        "premise": "A car is parked outside the house",
+        "hypothesis": "The owner is inside the house"
     },
     {
         "premise": "Scientists discovered a new planet",
         "hypothesis": "A new celestial body was found"
     },
+    {
+        "premise": "The stock market crashed yesterday",
+        "hypothesis": "Investors are very happy with profits"
+    }
 ]
 
 if "premise" not in st.session_state:
